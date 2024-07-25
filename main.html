@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de Orçamentos</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Gerador de Orçamentos</h1>
+            <form id="orcamentoForm">
+                <h2>Selecione os serviços:</h2>
+                <div class="servicos">
+                    <label><input type="checkbox" name="servicos" value="130"> Transferência - R$ 130,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="45"> Taxa ATPV - R$ 45,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="65"> Vistoria - R$ 65,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="45"> Ordem de Placa - R$ 45,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="260"> Par de Placa - R$ 260,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="180"> Placa Unica - R$ 180,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="450"> Laudo Pericial - R$ 450,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="215"> Primeiro emplacamento - R$ 215,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="120"> Baixa de Gravame - R$ 120,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="120"> Inclusão de Gravame - R$ 120,00</label><br>
+                    <label><input type="checkbox" name="servicos" value="100"> Despachante - R$ 100,00</label><br>
+                </div>
+                <button type="button" id="gerarOrcamento">Gerar Orçamento</button>
+            </form>
+            <h2>Orçamento:</h2>
+            <textarea id="orcamento" ></textarea>
+            <button id="copiarOrcamento">Copiar Orçamento</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
